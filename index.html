@@ -3,11 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>My Personal Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #83a4d4, #b6fbff);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .resume {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 100%;
+            height: 80vh;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            margin-top: 1.5rem;
+            font-size: 1rem;
+            color: white;
+            background: #83a4d4;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .download-btn:hover {
+            background: #6a8db3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Personal Page!</h1>
-    <p>Check out my resume below:</p>
-    <a href="resume.pdf" target="_blank">View my Resume</a>
+    <div class="container">
+        <h1>Welcome to My Personal Page! 🌟</h1>
+        <p>Explore my resume directly below or download a copy.</p>
+        
+        <iframe src="resume.pdf" class="resume" frameborder="0"></iframe>
+        
+        <a href="resume.pdf" class="download-btn" download>Download My Resume</a>
+    </div>
 </body>
 </html>
